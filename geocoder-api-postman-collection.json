@@ -1,0 +1,211 @@
+{
+    "id": "c95d067db16ed5d9dfda8bfc508ea871",
+    "name": "Geocoder API",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "0eeb478e7494bbf5ae711a6a2655b0d9",
+            "name": "Geocode using partial address information",
+            "url": "httpsgeocoder.cit.api.here.com\/6.2\/geocode.json",
+            "description": "*Request the latitude, longitude and details of an address based on partial address information*\n\nThis example shows a structured (qualified) geocoding request using the `geocode` endpoint. In this structured request the data is provided in `country`, `city`, `street` and `housenumber` parameters in the request URL. Note that the street name misses the directional (\"W\") and also the street type. The omitted directional makes the query ambiguous and the response contains therefore two results: On",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "housenumber",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "street",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "city",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "country",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "gen",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "app_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "app_code",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "c95d067db16ed5d9dfda8bfc508ea871",
+            "rawModeData": ""
+        },
+        {
+            "id": "9adc860cc7a91321666010b106476901",
+            "name": "Reverse Geocode Landmarks",
+            "url": "httpsgeocoder.cit.api.here.com\/6.2\/reversegeocode.json",
+            "description": "*Request details of landmarks near to a given latitude and longitude*\n\nLandmark reverse geocoding requests can be made using the `reversegeocode` endpoint, specifying the parameter `mode=retrieveLandmarks`, and adding the `prox` parameter to the request URL.  Consult the  Geocoder API Reference for a full list of available landmark types.\n\n\n\n* **prox**  `prox`\n \\- A type of spatial filter. Proximity specifies a circle to search using a latitude, a longitude, and a radius in meters.    e.g. `52.5",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "prox",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "mode",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "app_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "app_code",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "gen",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "c95d067db16ed5d9dfda8bfc508ea871",
+            "rawModeData": ""
+        },
+        {
+            "id": "6cd08e59da44fbf27241070a357e6773",
+            "name": "Multi-reverse Geocode Addresses",
+            "url": "httpsgeocoder.cit.api.here.com\/6.2\/multi-reversegeocode.json",
+            "description": "*Request the addresses of up to one hundred locations with one multi-reverse geocoding request*\n\nThe body of the HTTP POST request contains the coordinates and optional radius in the `prox` parameter and an optional numeric identifier in the `id` parameter as plain text, one line per pair of coordinates. The identifier associates each result with the corresponding input. If no id is provided the system creates one starting with 0.\n  \n\n\n\n* **mode**  `enum`\n \\- Search for prominent landmarks nearb",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "mode",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "gen",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "app_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "app_code",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Cache",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "c95d067db16ed5d9dfda8bfc508ea871",
+            "rawModeData": ""
+        }
+    ]
+}
