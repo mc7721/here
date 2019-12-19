@@ -1,0 +1,217 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Venue Maps",
+        "description": "The **HERE Venue Maps API** returns detailed up-to-date information on geometry, metadata, Points of Interest (POI) and indoor routing for more than 12 000 venues around the world. \n\nThe Venue Maps API provides solutions for the following high level use cases:\n\n* Discover venues in a certain area of the world\n* Get a venue map image tile\n* Get a venue map JSON tile\n* Get full information of a venue and customize your experience\n\n\nThis example set works with version **1.1** or higher\n\nAdditional information can be found on [developer.here.com](https:\/\/developer.here.com\/rest-apis\/documentation\/venue-maps)",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpssignature.venue.maps.cit.api.here.com\/venues\/signature"
+    ],
+    "paths": {
+        "\/v1": {
+            "get": {
+                "summary": "Venue Clusters within a Bounding Box",
+                "description": "*Request an overview of the number venues across a large area*\n\nA bounding box is specified using the `bbox` parameter in the request URL.\n\n\n\n* **bbox**  `bbox`\n \\- A type of spatial filter. A bounding box specifies the top-right and bottom left corners of an area to search.    e.g. `52.515,13.377;52.134,13.978`\n\n* **app_id**  `text`\n \\- A 20 byte Base64 URL-safe encoded string used for the authentication of the client application.    You must include an `app_id` with every request.\n\n* **app_cod",
+                "operationId": "V1Get3",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "bbox",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_id",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_code",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/1\/models-full\/DM_12321.js": {
+            "get": {
+                "summary": "Full Venue Model",
+                "description": "*Request extended details of places found within a venue*\n\nA full model of a venue can be obtained by passing `models-full` in the path of the request URL and appending the `id` of the venue in question along with associated authentication credentials. \n  \n  Note that the client-side process formatting the JSON response may take some time in older browsers.\n\n\n\n* **app_id**  `text`\n \\- A 20 byte Base64 URL-safe encoded string used for the authentication of the client application.    You must incl",
+                "operationId": "1ModelsFullDM12321JsGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "app_id",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_code",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "Signature",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "Policy",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "Key",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/0\/tiles-png\/L1\/12022001101210030210.png": {
+            "get": {
+                "summary": "Venue Map Tile",
+                "description": "*Request an individual venue map tile*\n\nIn addition to the usual `app_id` and `app_code`, three additional parameters are required for authentication purposes. The `Signature`, `Policy` and `Key-Pair-Id` parameters have been obtained from a prior request to the `Signature` endpoint.\n\n\n\n* **app_id**  `text`\n \\- A 20 byte Base64 URL-safe encoded string used for the authentication of the client application.    You must include an `app_id` with every request.\n\n* **app_code**  `text`\n \\- A 20 byte Ba",
+                "operationId": "0TilesPngL112022001101210030210PngGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "app_id",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_code",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "Signature",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "Policy",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "Key",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/0\/tiles-ia\/L1\/12022001101210030210.js": {
+            "get": {
+                "summary": "Room Definitions",
+                "description": "*Request a list of the name and shape of rooms found within a single venue map tile*\n\nRoom data associated with a map tile is requested by passing `tiles-ia` in the path of the request URL, along with a known `floor` and `quadkey` and associated authentication credentials.\n\n\n\n* **app_id**  `text`\n \\- A 20 byte Base64 URL-safe encoded string used for the authentication of the client application.    You must include an `app_id` with every request.\n\n* **app_code**  `text`\n \\- A 20 byte Base64 URL-s",
+                "operationId": "0TilesIaL112022001101210030210JsGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "app_id",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_code",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "Signature",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "Policy",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "Key",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/1\/models-poi\/DM_7205.js": {
+            "get": {
+                "summary": "Places within a Venue",
+                "description": "*Request a list of the places within a venue*\n\nDetails of the individual places to be found within a venue can be obtained by passing `models-poi` in the path of the request URL and appending the `id` of the venue in question along with associated authentication credentials.\n\n\n\n* **app_id**  `text`\n \\- A 20 byte Base64 URL-safe encoded string used for the authentication of the client application.    You must include an `app_id` with every request.\n\n* **app_code**  `text`\n \\- A 20 byte Base64 URL",
+                "operationId": "1ModelsPoiDM7205JsGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "app_id",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_code",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "Signature",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "Policy",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "Key",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/0\/tiles-ia-b64\/L1\/12022001101210030210.js": {
+            "get": {
+                "summary": "Base64 Encoded Map Tiles",
+                "description": "*Request a base64 encoded map tile and associated room definitions with a single request*\n\nA base64 encoded map tile together with the room definitions, is requested by passing `tiles-ia-b64` in the path of the request URL, along with a known `floor` and `quadkey` and associated authentication credentials.\n\n\n\n* **app_id**  `text`\n \\- A 20 byte Base64 URL-safe encoded string used for the authentication of the client application.    You must include an `app_id` with every request.\n\n* **app_code** ",
+                "operationId": "0TilesIaB64L112022001101210030210JsGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "app_id",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_code",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "Signature",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "Policy",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "Key",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": []
+    }
+}
