@@ -1,0 +1,82 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Waypoint Sequence Extension API",
+        "description": "The **HERE Waypoints Sequence Extension API** calculates the optimal sequence of any given waypoints along a route, while minimizing the time or distance traveled. Often referred as the \u201cTravelling Salesman Problem\u201d, the service takes into account the HERE road network restrictions as well as traffic pattern data to provide accurate travel times and distances between subsequent waypoints. Mode of travel, by car or truck, as well as route preference like fastest or shortest, can also be considered when applying for specific use cases.\n\n\nThis example set works with version **2.0** or higher\n\nAdditional information can be found on [developer.here.com](https:\/\/developer.here.com\/platform-extensions\/documentation\/routing-waypoints)",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpswse.cit.api.here.com\/2"
+    ],
+    "paths": {
+        "\/findsequence.json": {
+            "get": {
+                "summary": "Waypoint Sequence for Hazardous Materials",
+                "description": "*Request an ordered list of destinations for a truck carrying hazardous materials*\n\nWaypoint sequence calcuations are made using the `findsequence` endpoint and appending  `start` and `end` parameters and consecutively numbered `destination` parameters are used to add intermediate points  to the request. Hazardous material types are added as a comma-delimited list to the  `shippedHazardousGoods` parameter. The list of values is defined in the Enterprise Routing API\n\n\n\n* **start**  `latlng`\n \\- S",
+                "operationId": "FindsequenceJsonGet4",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "start",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "destination1",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "destination2",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "destination3",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "destination4",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "end",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "improveFor",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "mode",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "shippedHazardousGoods",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_id",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_code",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": []
+    }
+}
