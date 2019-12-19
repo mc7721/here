@@ -1,0 +1,331 @@
+{
+    "name": "HERE",
+    "description": "HERE Technologies enables people, enterprises and cities around the world to harness the power of location and create innovative solutions that make our lives safer and more efficient. We transform information from devices, vehicles, infrastructure and...",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/20089-here-maps.jpg",
+    "tags": [
+        "api provider",
+        "general data",
+        "have api",
+        "maps",
+        "relative data"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/here\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "Traffic API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/20089-here-maps.jpg",
+            "humanURL": "http:\/\/developer.here.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/traffic-api.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/traffic-api-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "Public Transport API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/20089-here-maps.jpg",
+            "humanURL": "http:\/\/developer.here.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/public-transport-api.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/public-transport-api-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "Geocoder API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/20089-here-maps.jpg",
+            "humanURL": "http:\/\/developer.here.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/geocoder-api.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/geocoder-api-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "Routing API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/20089-here-maps.jpg",
+            "humanURL": "http:\/\/developer.here.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/routing-api.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/routing-api-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "Map Image API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/20089-here-maps.jpg",
+            "humanURL": "http:\/\/developer.here.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/map-image-api.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/map-image-api-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "Places API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/20089-here-maps.jpg",
+            "humanURL": "http:\/\/developer.here.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/places-api.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/places-api-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "Custom Location Extension API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/20089-here-maps.jpg",
+            "humanURL": "http:\/\/developer.here.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/custom-location-extension-api.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/custom-location-extension-api-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "Venue Maps",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/20089-here-maps.jpg",
+            "humanURL": "http:\/\/developer.here.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/venue-maps.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/venue-maps-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "HERE",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/20089-here-maps.jpg",
+            "humanURL": "http:\/\/developer.here.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/here.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/here-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "Waypoint Sequence Extension API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/20089-here-maps.jpg",
+            "humanURL": "http:\/\/developer.here.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/waypoint-sequence-extension-api.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/waypoint-sequence-extension-api-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "Batch Geocoder API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/20089-here-maps.jpg",
+            "humanURL": "http:\/\/developer.here.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/batch-geocoder-api.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/batch-geocoder-api-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "Map Tile API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/20089-here-maps.jpg",
+            "humanURL": "http:\/\/developer.here.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/map-tile-api.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/map-tile-api-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "Platform Data Extension API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/20089-here-maps.jpg",
+            "humanURL": "http:\/\/developer.here.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/platform-data-extension-api.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/platform-data-extension-api-postman-collection.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Blog RSS",
+            "url": "https:\/\/developer.here.com\/blog\/feed"
+        },
+        {
+            "type": "Github",
+            "url": "https:\/\/github.com\/heremaps"
+        },
+        {
+            "type": "Blog",
+            "url": "https:\/\/developer.here.com\/blog"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "https:\/\/crunchbase.com\/organization\/here-inc"
+        },
+        {
+            "type": "Developers",
+            "url": "https:\/\/developer.here.com"
+        },
+        {
+            "type": "Email",
+            "url": "dirk.popp@here.com"
+        },
+        {
+            "type": "Email",
+            "url": "sebastian.kurme@here.com"
+        },
+        {
+            "type": "Email",
+            "url": "jordan.stark@here.com"
+        },
+        {
+            "type": "Email",
+            "url": "amy.stupavsky@here.com"
+        },
+        {
+            "type": "Email",
+            "url": "minna.laub@here.com"
+        },
+        {
+            "type": "Email",
+            "url": "stefanie.sirc@here.com"
+        },
+        {
+            "type": "Email",
+            "url": "rachel.kuta@here.com"
+        },
+        {
+            "type": "Email",
+            "url": "laurel.davis-lyons@here.com"
+        },
+        {
+            "type": "Email",
+            "url": "linda.bradley@here.com"
+        },
+        {
+            "type": "Email",
+            "url": "press@here.com"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/here"
+        },
+        {
+            "type": "Website",
+            "url": "https:\/\/developer.here.com"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/developer.here.com"
+        },
+        {
+            "type": "Website",
+            "url": "https:\/\/here.com"
+        }
+    ]
+}
