@@ -1,0 +1,137 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Geocoder API",
+        "description": "The **HERE Geocoder API** is a web API that offers geocoding, reverse geocoding and landmark geocoding services.\n\n**Geocoding**\n\nGeocoding matches an address to its correct location on the map. Applications submit addresses or a search string containing partial address information. The result is either a single record exactly matching the input, or a set of records ranked by relevance when the input is ambiguous or the input cannot be found on the map in the requested detail.\n\n**Reverse Geocoding**\n\nReverse geocoding retrieves a street address or administrative area information corresponding to a given geo-coordinate.\n\n**Landmark Geocoding**\n\nLandmark geocoding is a combination of geocoding, landmark search, and reverse geocoding. It supports search for airports, well known landmarks such as the Eiffel Tower or landmarks classified as nationally important. The result is a list of ranked locations including street addresses, administrative areas, or landmarks.\n\nThis example set works wi",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsgeocoder.cit.api.here.com\/6.2"
+    ],
+    "paths": {
+        "\/geocode.json": {
+            "get": {
+                "summary": "Geocode using partial address information",
+                "description": "*Request the latitude, longitude and details of an address based on partial address information*\n\nThis example shows a structured (qualified) geocoding request using the `geocode` endpoint. In this structured request the data is provided in `country`, `city`, `street` and `housenumber` parameters in the request URL. Note that the street name misses the directional (\"W\") and also the street type. The omitted directional makes the query ambiguous and the response contains therefore two results: On",
+                "operationId": "GeocodeJsonGet5",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "housenumber",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "street",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "city",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "country",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "gen",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_id",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_code",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/reversegeocode.json": {
+            "get": {
+                "summary": "Reverse Geocode Landmarks",
+                "description": "*Request details of landmarks near to a given latitude and longitude*\n\nLandmark reverse geocoding requests can be made using the `reversegeocode` endpoint, specifying the parameter `mode=retrieveLandmarks`, and adding the `prox` parameter to the request URL.  Consult the  Geocoder API Reference for a full list of available landmark types.\n\n\n\n* **prox**  `prox`\n \\- A type of spatial filter. Proximity specifies a circle to search using a latitude, a longitude, and a radius in meters.    e.g. `52.5",
+                "operationId": "ReversegeocodeJsonGet4",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "prox",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "mode",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_id",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_code",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "gen",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/multi-reversegeocode.json": {
+            "post": {
+                "summary": "Multi-reverse Geocode Addresses",
+                "description": "*Request the addresses of up to one hundred locations with one multi-reverse geocoding request*\n\nThe body of the HTTP POST request contains the coordinates and optional radius in the `prox` parameter and an optional numeric identifier in the `id` parameter as plain text, one line per pair of coordinates. The identifier associates each result with the corresponding input. If no id is provided the system creates one starting with 0.\n  \n\n\n\n* **mode**  `enum`\n \\- Search for prominent landmarks nearb",
+                "operationId": "MultiReversegeocodeJsonPost2",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "mode",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "gen",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_id",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_code",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Cache",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": []
+    }
+}
