@@ -1,0 +1,117 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Map Image API",
+        "description": "The **HERE Map Image API** is a web service API that offers easy and fast access to static map images for all regions of the world. You can also display points of interest and enhance maps with routes, turning points and junction views, or additional information such as statistics or heat maps.\n\nIn addition, the API offers a variety of supplementary services for displaying location based data. For example, it is possible to present roadsigns.\n\nThis example set works with version **1.6.36.1** or higher\n\nAdditional information can be found on [developer.here.com](https:\/\/developer.here.com\/rest-apis\/documentation\/enterprise-map-image)",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsimage.maps.cit.api.here.com\/mia\/1.6"
+    ],
+    "paths": {
+        "\/mapview": {
+            "get": {
+                "summary": "Map Image using Bounding Box",
+                "description": "*Request an image of a map based around a given area*\n\nTo specify a bounding box, add the `bbox` parameter to the request URL. On desktop browsers, redirection to `here.com` will occur automatically unless the `nord` parameter is also added to URL.\n\n\n\n* **bbox**  `text`\n \\- Bounding box of the map specifying the top-right and bottom left corners.    e.g. `52.515,13.377,52.134,13.978`\n\n* **app_id**  `text`\n \\- A 20 byte Base64 URL-safe encoded string used for the authentication of the client appl",
+                "operationId": "MapviewGet15",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "bbox",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_id",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_code",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/route": {
+            "get": {
+                "summary": "Map Image with Polylines",
+                "description": "*Request an image of a map including a polyline*\n\nIt supports also different map schemes, image sizes; image formats as \r\nwell as zooming out from automatically calculated zoom level.\n  \n\n\n\n* **r0**  `text`\n \\- List of coordinates describing the first route\n\n* **r1**  `text`\n \\- List of coordinates describing the second route\n\n* **m0**  `text`\n \\- First route marker on the map\n\n* **m1**  `text`\n \\- Second route marker on the map\n\n* **lc0**  `text`\n \\- Color of the first route line displayed on t",
+                "operationId": "RouteGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "r0",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "r1",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "m0",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "m1",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "lc0",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "sc0",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "lw0",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "lc1",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "sc1",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "lw1",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "w",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_id",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_code",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": []
+    }
+}
