@@ -1,0 +1,152 @@
+{
+    "id": "7883b7b8295b0b7c72ec0ae7ca4e76fa",
+    "name": "Batch Geocoder API",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "2e936a8201e115e6fdc46aee289df31f",
+            "name": "Get Job",
+            "url": "httpsbatch.geocoder.cit.api.here.com\/6.2\/jobs\/puwWrv32YOU24y8MNoUr793chFAI36aC",
+            "description": "*Request the status of a batch geocoder job*\n\nTo check the status, make a request to the `jobs` endpoint  appending the `requestId` and using the parameter `action=status `\n  \n\n\n\n* **action**  `enum`\n \\- Type of request  \n\n Valid values are : `cancel`, `runs`, `status`\n\n* **app_code**  `text`\n \\- A 20 byte Base64 URL-safe encoded string used for the authentication of the client application.    You must include an `app_code` with every request.  \n\n* **app_id**  `text`\n \\- A 20 byte Base64 URL-saf",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "action",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "app_code",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "app_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7883b7b8295b0b7c72ec0ae7ca4e76fa",
+            "rawModeData": ""
+        },
+        {
+            "id": "76796960188b02a7c7ce12c4aafea555",
+            "name": "Add Jobs",
+            "url": "httpsbatch.geocoder.cit.api.here.com\/6.2\/jobs",
+            "description": "* Start asynchronously geocoding a large set of addresses in one batch*\n\nSubmit an HTTP POST request with `action=run` and attach the input data to the body. \n  \n\n\n\n* **gen**  `number`\n \\- Enables\/disables backward incompatible behavior in the API\n\n* **app_id**  `text`\n \\- A 20 byte Base64 URL-safe encoded string used for the authentication of the client application.    You must include an `app_id` with every request.\n\n* **app_code**  `text`\n \\- A 20 byte Base64 URL-safe encoded string used for ",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "gen",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "app_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "app_code",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "action",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "mailto",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "header",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "indelim",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "outdelim",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "outcols",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "outputCombined",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7883b7b8295b0b7c72ec0ae7ca4e76fa",
+            "rawModeData": ""
+        }
+    ]
+}
