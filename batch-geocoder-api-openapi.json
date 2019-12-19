@@ -1,0 +1,102 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Batch Geocoder API",
+        "description": "The **HERE Batch Geocoder API** is a web service that allows users to geocode large data sets (hundreds of thousands). Users upload a single input file, the service processes the data asynchronously and returns a single file with the results.\n\nThis example set works with version **6.2.34** or higher\n\nAdditional information can be found on [developer.here.com](https:\/\/developer.here.com\/rest-apis\/documentation\/batch-geocoder)",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsbatch.geocoder.cit.api.here.com\/6.2"
+    ],
+    "paths": {
+        "\/jobs\/puwWrv32YOU24y8MNoUr793chFAI36aC": {
+            "get": {
+                "summary": "Get Job",
+                "description": "*Request the status of a batch geocoder job*\n\nTo check the status, make a request to the `jobs` endpoint  appending the `requestId` and using the parameter `action=status `\n  \n\n\n\n* **action**  `enum`\n \\- Type of request  \n\n Valid values are : `cancel`, `runs`, `status`\n\n* **app_code**  `text`\n \\- A 20 byte Base64 URL-safe encoded string used for the authentication of the client application.    You must include an `app_code` with every request.  \n\n* **app_id**  `text`\n \\- A 20 byte Base64 URL-saf",
+                "operationId": "GetJob",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "action",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_code",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_id",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/jobs": {
+            "post": {
+                "summary": "Add Jobs",
+                "description": "* Start asynchronously geocoding a large set of addresses in one batch*\n\nSubmit an HTTP POST request with `action=run` and attach the input data to the body. \n  \n\n\n\n* **gen**  `number`\n \\- Enables\/disables backward incompatible behavior in the API\n\n* **app_id**  `text`\n \\- A 20 byte Base64 URL-safe encoded string used for the authentication of the client application.    You must include an `app_id` with every request.\n\n* **app_code**  `text`\n \\- A 20 byte Base64 URL-safe encoded string used for ",
+                "operationId": "AddJob",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "gen",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_id",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_code",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "action",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "mailto",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "header",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "indelim",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "outdelim",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "outcols",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "outputCombined",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": []
+    }
+}
