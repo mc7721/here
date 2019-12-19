@@ -1,0 +1,177 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Places API",
+        "description": "The **HERE Places (Search) API** is a web service which allows users to search and explore locations, buildings and other points of interest.\n\nThe Places (Search) API has a number of endpoints that center around two major features:\n\n* Place discovery \u2013 search for places near your users\n* Place description - get detailed information about the places your users are interested in\n\nWithin place discovery, the API has endpoints supporting a number of use cases, from which you can select according to the needs of your application:\n\n* search \u2013 location-aware search for places based on user-provided search terms\n* explore \u2013 find interesting places in an area (either near the user or selected by the user)\n* here \u2013 identify what place is at a given location\n* around \u2013 similar to explore, but optimised for augmented reality visual exploration applications such as LiveSight.\n\nThis example set works with version **1.0** or higher\n\nAdditional information can be found on [developer.here.com",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsplaces.demo.api.here.com\/places\/v1"
+    ],
+    "paths": {
+        "\/suggest": {
+            "get": {
+                "summary": "Search Suggestions",
+                "description": "*Request a list of suggestions based on a partial query string*\n\nA suggestions request can be made using the `suggest` endpoint in the request URL and adding the `q` parameter with the partial query string. The focal point for the suggestion service is defined using the `at` parameter.\n\n\n\n* **at**  `latlng`\n \\- Location of the central point for the places search.    e.g. `52.515,13.377`\n\n* **q**  `text`\n \\- Free-form text containing the search term.    e.g. `restaurant` or `Brandenburger Tor`\n\n*",
+                "operationId": "SuggestGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "at",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_id",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_code",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/categories\/places": {
+            "get": {
+                "summary": "Place Categories",
+                "description": "*Request a list of place categories available for a given location*\n\nA place category request can be made using the `categories\/places` endpoint in the request URL and specifying the  focal point using the `at` parameter.\n\n\n\n* **at**  `latlng`\n \\- Location of the central point for the places search.    e.g. `52.515,13.377`\n\n* **app_id**  `text`\n \\- A 20 byte Base64 URL-safe encoded string used for the authentication of the client application.    You must include an `app_id` with every request.\n\n",
+                "operationId": "CategoriesPlacesGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "at",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_id",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_code",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/discover\/explore": {
+            "get": {
+                "summary": "Explore Popular Places",
+                "description": "*Request a list of popular places around a location*\n\nThe `explore` location context can either be an explicitly given location using the `at` parameter, or implicitly defined by a user's current position or the currently visible map.\n\n\n\n* **at**  `latlng`\n \\- Location of the central point for the places search.    e.g. `52.515,13.377`\n\n* **app_id**  `text`\n \\- A 20 byte Base64 URL-safe encoded string used for the authentication of the client application.    You must include an `app_id` with eve",
+                "operationId": "DiscoverExploreGet5",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "at",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_id",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_code",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/discover\/here": {
+            "get": {
+                "summary": "Explore Nearby Places",
+                "description": "*Request a list of places close to a location *\n\nThe `discover\/here` endpoint allow users to request a list of places near to a given point, based on a location precision parameter (in this case the `at` parameter) which must be provided. If the precision is high, the places around that point are returned in order of proximity. Otherwise a set of recommended places in the area is returned.\n\n\n\n* **at**  `latlng`\n \\- Location of the central point for the places search.    e.g. `52.515,13.377`\n\n* *",
+                "operationId": "DiscoverHereGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "at",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_id",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_code",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/discover\/search": {
+            "get": {
+                "summary": "One-Box Search",
+                "description": "*Request a list of nearby places based on a query string*\n\nA free-text places search can be made using the `discover\/search` endpoint in the request URL and adding the `q` parameter with the query string. The focal point of the search is defined using the `at` parameter.\n\n\n\n* **at**  `latlng`\n \\- Location of the central point for the places search.    e.g. `52.515,13.377`\n\n* **q**  `text`\n \\- Free-form text containing the search term.    e.g. `restaurant` or `Brandenburger Tor`\n\n* **app_id**  `t",
+                "operationId": "DiscoverSearchGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "at",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_id",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_code",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": []
+    }
+}
