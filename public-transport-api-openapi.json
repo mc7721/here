@@ -1,0 +1,552 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Public Transport API",
+        "description": "Examples for public_transit_nlp_2.1.6 or higher",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpscit.transit.api.here.com\/"
+    ],
+    "paths": {
+        "\/search\/by_name.json": {
+            "get": {
+                "summary": "Find Stations by Name",
+                "description": "*Request a list of public transit stations based on name*\n\nA station search request can be made using the `search\/by_name.json` endpoint and adding the `name` parameter. The focal point of the search is defined using the `x` and `y` parameters. The number of results can be further restricted by `max `and the `radius `parameters.\n  \n\n\n\n* **x**  `number`\n \\- The longitude of the center point of your search.    e.g. `13.377`\n\n* **y**  `number`\n \\- The latitude of the center point of your search.   ",
+                "operationId": "SearchByNameJsonGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "x",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "y",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_id",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_code",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "max",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "method",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "radius",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/metarouter\/rest\/routeservice\/v2\/route.json": {
+            "get": {
+                "summary": "Avoid Transit Routes Involving Transfers",
+                "description": "*Request a direct public transit route excluding changes and transfers*\n\nPublic transit routes can be requested using the `metarouter\/rest\/routeservice\/v2\/route.json` endpoint. The `changes `parameter is used to indicate the number of changes or transfers desired. \n\n\n\n* **startX**  `number`\n \\- The longitude of the start point of your journey.    e.g. `13.377`\n\n* **startY**  `number`\n \\- The latitude of the start point of your journey.    e.g. `52.515`\n\n* **destX**  `number`\n \\- The longitude of",
+                "operationId": "MetarouterRestRouteserviceV2RouteJsonGet8",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "startX",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "startY",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "destX",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "destY",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "time",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_id",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_code",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "routing",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "changes",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/isochrone\/v1\/search.json": {
+            "get": {
+                "summary": "Reachability of an Area Within a Specific Time",
+                "description": "*Request a list of the public transit stations that can be reached in a given time*\n\nTo find the stations reachable in a specified time use the `isochrone\/v1\/search.json` endpoint specifying a center point using the `x` and `y` parameters and a maximum total duration in minutes using the `max_dur `parameter.\n  \n\n\n\n* **max_dur**  `number`\n \\- Maximum duration of the journeys, in minutes.   Minimum = 5, Maximum = 90.    The default duration is 15 minutes.    \n\n* **y**  `number`\n \\- The latitude of",
+                "operationId": "IsochroneV1SearchJsonGet2",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "max_dur",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "y",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "x",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "time",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_id",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_code",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/metarouter\/rest\/boardservice\/v1\/multiboard.json": {
+            "get": {
+                "summary": "All Next Departures (deprecated)",
+                "description": "*Request a list of all next departure times and destinations from a location.*\n\nAll next departures information can be requested using the `metarouter\/rest\/boardservice\/v1\/multiboard.json` and specifying a `time` and `coordinates. `The maximum numbers of nearby stations and number of departures per station can be restricted by using the `max_stn` and `max` parameters, respectively.\n  \n  <b>NOTE:<\/b> This API has been deprecated and replaced with 2 new endpoints. Please see \n  <b><i>All Next Depa",
+                "operationId": "MetarouterRestBoardserviceV1MultiboardJsonGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "startX",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "startY",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "time",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_id",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_code",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "max",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "max_stn",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "prod",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/coverage\/v1\/nearby.json": {
+            "get": {
+                "summary": "Transit Coverage Nearby",
+                "description": "*Request a list of transit operators and station coverage nearby*\n\nOperator coverage is requested using the `coverage\/v1\/nearby.json` endpoint specifying the location using the `x` and `y` parameters.\n\n\n\n* **details**  `enum`\n \\- Don't show line info in Explored Coverage\n\n    Valid values are : `0` - disabled, `1` - enabled\n\n* **y**  `number`\n \\- The latitude of the center point of your search.    e.g. `52.515`\n\n* **x**  `number`\n \\- The longitude of the center point of your search.    e.g. `13.",
+                "operationId": "CoverageV1NearbyJsonGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "details",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "y",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "x",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "chinaconfig",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_id",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_code",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/coverage\/v1\/search.json": {
+            "get": {
+                "summary": "Transit Coverage Within a City",
+                "description": "*Request a list of transit operator coverage within a specified city*\n\nA list of operators working within a city is requested using the `coverage\/v1\/search.json` endpoint. The city is specified using the  `q` parameter.\n\n\n\n* **q**  `text`\n \\- The name or a part of the name of the city to search.\n\n* **app_id**  `text`\n \\- A 20 bytes Base64 URL-safe encoded string used for the authentication of the client application.    You must include an app_code and app_code with every request.\n\n* **app_code**",
+                "operationId": "CoverageV1SearchJsonGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_id",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_code",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "max",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "details",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "chinaconfig",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/search\/by_stopids.json": {
+            "get": {
+                "summary": "Find Stations by ID",
+                "description": "*Request details of a specific transit station based on a previous request*\n\nStation details are requested using the `search\/by_stopids.json` endpoint and appending a comma delimited list of `stop-ids` to the request URL. Usually, the request to this endpoint will be called after making a station search request, to obtain a list of stations Ids.\n  \n\n\n\n* **stopIds**  `text`\n \\- Specifies a list of stopIds separated by comma. Each stopId must contain at least 6 characters and must not exceed a max",
+                "operationId": "SearchByStopidsJsonGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "stopIds",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_id",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_code",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/search\/by_geocoord.json": {
+            "get": {
+                "summary": "Find Stations Nearby",
+                "description": "*Request a list of public transit stations within a given geo-location.*\n\nTo find the nearest stations use the `search\/by_geocoord.json` endpoint specifying a center point using the `x` and `y` parameters and a search radius in meters using the `radius` parameter. `Max` value can also be used to restrict the number of results shown in the response.\n\n\n\n* **y**  `number`\n \\- The latitude of the center point of your search.    e.g. `52.515`\n\n* **x**  `number`\n \\- The longitude of the center point o",
+                "operationId": "SearchByGeocoordJsonGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "y",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "x",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "radius",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_id",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_code",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "max",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/coverage\/v1\/city.json": {
+            "get": {
+                "summary": "Find Transit Coverage in Cities Nearby",
+                "description": "*Request a list of transit operators available in cities nearby*\n\nCity coverage can be found using the `coverage\/v1\/city.json` endpoint. The `x` and `y` parameters specify the location of the search.\n  The response also includes the number of transit lines and transit stops available for each city.\n  \n\n\n\n* **x**  `number`\n \\- The longitude of the center point of your search.    e.g. `13.377`\n\n* **y**  `number`\n \\- The latitude of the center point of your search.    e.g. `52.515`\n\n* **chinaconfig",
+                "operationId": "CoverageV1CityJsonGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "x",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "y",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "chinaconfig",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "radius",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_id",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_code",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/metarouter\/rest\/boardservice\/v2\/stationboard.json": {
+            "get": {
+                "summary": "Next Nearby Departures from a Station",
+                "description": "*Request a list of next departure times and destinations of a particular station*\n\nNext nearby departures can be requested using the `metarouter\/rest\/boardservice\/v2\/stationboard.json` and specifying a `time` and `stnId`.\n  \n  The station ID (stnId) can be obtained from making a prior call to one of the station search (by name or by geo-coordinates) endpoints.\n\n\n\n* **lang**  `text`\n \\- Language of the response\n\n* **stnId**  `number`\n \\- Station Id.  The format of a station Id is 123456789#100. O",
+                "operationId": "MetarouterRestBoardserviceV2StationboardJsonGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "stnId",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "time",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "strict",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_id",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_code",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/metarouter\/rest\/boardservice\/v1\/multiboard\/by_stopids.json": {
+            "get": {
+                "summary": "All Next Departures for a list of Stations",
+                "description": "*Request a list of all next departure times and destinations for a give list of stations.*\n\nAll next departures for a list of stations can be requested using the `metarouter\/rest\/boardservice\/v1\/multiboard\/by_stopIds.json` and specifying a `time` and `stopIds.`  \nThe maximum numbers of nearby stations and number of departures per station can be restricted by using the `max_stn` and `max` parameters, respectively.\n  \n\n\n\n* **lang**  `text`\n \\- Language of the response\n\n* **time**  `text`\n \\- Time ",
+                "operationId": "MetarouterRestBoardserviceV1MultiboardByStopidsJsonGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "time",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_id",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_code",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "max",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "max_stn",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "stopIds",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/metarouter\/rest\/boardservice\/v1\/multiboard\/by_geocoord.json": {
+            "get": {
+                "summary": "All Next Departures from a Location",
+                "description": "*Request a list of all next departure times and destinations from a given location.*\n\nAll next departures from a given location can be requested using the `metarouter\/rest\/boardservice\/v1\/multiboard\/by_geocoord.json` and specifying a `time` and `coordinates. `The maximum numbers of nearby stations and number of departures per station can be restricted by using the `max_stn` and `max` parameters, respectively.\n  \n\n\n\n* **lang**  `text`\n \\- Language of the response\n\n* **startX**  `number`\n \\- The l",
+                "operationId": "MetarouterRestBoardserviceV1MultiboardByGeocoordJsonGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "startX",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "startY",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "time",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_id",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "app_code",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "max",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "max_stn",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "prod",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": []
+    }
+}
