@@ -1,5 +1,5 @@
 {
-    "id": "920ed8d68b562c91b6493bbefd689e83",
+    "id": "4cb9562577db2b91e4fe42cd9264550a",
     "name": "Routing API",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "a361951d22d50f883ce1e4c939e6666c",
+            "id": "e968df3d5bdd98a3ca51b7385307202e",
             "name": "Avoid motorways",
             "url": "httpsroute.cit.api.here.com\/routing\/7.2\/calculateroute.json",
             "description": "*Request a route preferring or avoiding specific types of road*\n\nRouting preferences can be added by extending the `mode` parameter of the request URL by adding a semi-colon delimited list of route link flags. In this case the addition of `motorway:-3` to the `mode` parameter indicates a strict exclusion of motorways. Consult the Routing API Reference for a full description of `mode` parameter and different feature weights.\n\n\n\n* **waypoint0**  `latlng`\n \\- Start point of the route.    e.g. `52.5",
@@ -65,11 +65,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "920ed8d68b562c91b6493bbefd689e83",
+            "collectionId": "4cb9562577db2b91e4fe42cd9264550a",
             "rawModeData": ""
         },
         {
-            "id": "14fbc8ed779c566177b217790bcee5aa",
+            "id": "9c72b84823cfc113d1d8194d9cf6dde8",
             "name": "Many to many matrix routing",
             "url": "httpsroute.cit.api.here.com\/routing\/7.2\/calculatematrix.json",
             "description": "*Matrix routing request with three start points and five destinations*\n\nMatrix calculations are made using the `calculatematrix` endpoint and appending a three start parameters (`start0, ``start1, ``start2)` and multiple consecutively numbered `destination` parameters to the request.\n  \n\n\n\n* **start0**  `latlng`\n \\- First start point for the route calculations.    e.g. `52.515,13.377`  \n\n* **start1**  `latlng`\n \\- Second start point for the route calculations.    e.g. `52.515,13.377`  \n\n* **star",
@@ -166,11 +166,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "920ed8d68b562c91b6493bbefd689e83",
+            "collectionId": "4cb9562577db2b91e4fe42cd9264550a",
             "rawModeData": ""
         },
         {
-            "id": "218344a4ab2ec517f526898e893affcd",
+            "id": "9a2695ac7c8baa851aec8d61734b11ba",
             "name": "Time-based isoline with destination as center",
             "url": "httpsroute.cit.api.here.com\/routing\/7.2\/calculateisoline.json",
             "description": "*Request an isoline that will reach a destination within a given time*\n\nTime-based reverse flow requests are made using the `calculateisoline` endpoint and specifying the `destination` and `rangetype=time` parameters.\n\n\n\n* **mode**  `text`\n \\- Routing mode determines how the route is calculated.    e.g. `fastest;car;traffic:disabled.`\n\n* **destination**  `latlng`\n \\- Destination of the reverse flow calculation.    e.g. `52.515,13.377`\n\n* **rangetype**  `text`\n \\- Specifies type of range. Possibl",
@@ -232,11 +232,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "920ed8d68b562c91b6493bbefd689e83",
+            "collectionId": "4cb9562577db2b91e4fe42cd9264550a",
             "rawModeData": ""
         },
         {
-            "id": "09e4271d4b9c28d61649b7ff85b36333",
+            "id": "5d92e0f5e00a8f46fe880a057e5269fd",
             "name": "Link Information using linkId",
             "url": "httpsroute.cit.api.here.com\/routing\/7.2\/getlinkinfo.json",
             "description": "*Request detailed information about a path segment in the routing network given a linkid*\n\nLink information can be retrieved using the `getlinkinfo` endpoint, by specifying one or more comma separated linkIds using the `linkids` parameter. The `linkids` have been generated from a previous request. Note that positive direction '+' in link Ids has to be URL encoded.\n  \n  \n\n\n\n* **linkids**  `text`\n \\- Link identifiers for which the detailed information is being requested.\n\n* **app_id**  `text`\n \\- ",
@@ -277,11 +277,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "920ed8d68b562c91b6493bbefd689e83",
+            "collectionId": "4cb9562577db2b91e4fe42cd9264550a",
             "rawModeData": ""
         },
         {
-            "id": "10e2d0b89efdb27c7550b708b8781cb7",
+            "id": "54000ca91b56e2803dfdb784a73847b0",
             "name": "Previously calculated route information",
             "url": "httpsroute.cit.api.here.com\/routing\/7.2\/getroute.json",
             "description": "*Request information about a previously calculated route*\n\nPrevious routes can be retrieved using the `getroute` endpoint and appending a `routeid` to the request. The `routeid` in question has been generated from a previous request. Note that server map updates usually invalidates `routeid` value computed on previous map versions. If it is the case, the `routeid` computation should be requested again on the map in current  use.\n  \n\n\n\n* **mode**  `text`\n \\- Routing mode determines how the route ",
@@ -329,7 +329,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "920ed8d68b562c91b6493bbefd689e83",
+            "collectionId": "4cb9562577db2b91e4fe42cd9264550a",
             "rawModeData": ""
         }
     ]
