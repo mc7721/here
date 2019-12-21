@@ -1,5 +1,5 @@
 {
-    "id": "25f76814f6d891d42acd0293c000dbbd",
+    "id": "b2e54eb8b3396db15a8acf8a21b410f6",
     "name": "Platform Data Extension API",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "5033291904c5dc1a6c9392dae16f1208",
+            "id": "c2daa7cd553986b8b5870d8caad7c804",
             "name": "Platform Static Data",
             "url": "httpspde.cit.api.here.com\/1\/static.json",
             "description": "*Request enumerated content from a static data table*\n\nTo request static data use the static.json endpoint and provide the name of the data table using the `content` parameter\n\n\n\n* **region**  `text`\n \\- Map Coverage Region.    e.g. `APAC`, `NA`, `EU`\n\n* **release**  `text`\n \\- Map release quarter    e.g. `2014Q4` or `LATEST`\n\n* **content**  `text`\n \\- The name of the static content table requested\n\n* **app_id**  `text`\n \\- A 20 byte Base64 URL-safe encoded string used for the authentication of ",
@@ -65,11 +65,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "25f76814f6d891d42acd0293c000dbbd",
+            "collectionId": "b2e54eb8b3396db15a8acf8a21b410f6",
             "rawModeData": ""
         },
         {
-            "id": "b3408839340cf516a2fb7995cfb76d5d",
+            "id": "6750f4ed40024a548c7c1da096a13cd4",
             "name": "Available Map Data Layers",
             "url": "httpspde.cit.api.here.com\/1\/doc\/layers.json",
             "description": "*Request which data layers can be accessed within a specified map region and release*\n\nTo make a request for data layer availability information, use the `layers.json` endpoint, supplying the `release` and `region` parameters.\n\n\n\n* **region**  `text`\n \\- Map Coverage Region.    e.g. `APAC`, `NA`, `EU`\n\n* **release**  `text`\n \\- Map release quarter    e.g. `2014Q4` or `LATEST`\n\n* **app_id**  `text`\n \\- A 20 byte Base64 URL-safe encoded string used for the authentication of the client application.",
@@ -117,11 +117,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "25f76814f6d891d42acd0293c000dbbd",
+            "collectionId": "b2e54eb8b3396db15a8acf8a21b410f6",
             "rawModeData": ""
         },
         {
-            "id": "14398cb6d91627c8bb1603f1addf1d37",
+            "id": "36c1acc5d5cbe63c92488d4ba89d66cd",
             "name": "Platform Data",
             "url": "httpspde.cit.api.here.com\/1\/tile.json",
             "description": "*Request data from a specific data layer about a specified location*\n\nTo request data  from a specified data layer, use the t`ile.json` endpoint, and include the `region`, `release` and `layer` parameters. The area covered is specified by the `level`, `tilex` and `tiley` parameters\n\n\n\n* **region**  `text`\n \\- Map Coverage Region.    e.g. `APAC`, `NA`, `EU`\n\n* **release**  `text`\n \\- Map release quarter    e.g. `2014Q4` or `LATEST`\n\n* **layer**  `text`\n \\- Thematic layer\n\n* **level**  `text`\n \\- ",
@@ -197,11 +197,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "25f76814f6d891d42acd0293c000dbbd",
+            "collectionId": "b2e54eb8b3396db15a8acf8a21b410f6",
             "rawModeData": ""
         },
         {
-            "id": "9ed3e293d035aa40b021d382c71724f7",
+            "id": "598660bf94582d4ce367897baacb0ca8",
             "name": "Available Attributes",
             "url": "httpspde.cit.api.here.com\/1\/doc\/attributes.json",
             "description": "*Request which map data layers contain which attributes*\n\nTo make a request for map data layer information, use the `attributes``.json` endpoint, supplying the `release` and `region` parameters.\n  \n\n\n\n* **region**  `text`\n \\- Map Coverage Region.    e.g. `APAC`, `NA`, `EU`\n\n* **release**  `text`\n \\- Map release quarter    e.g. `2014Q4` or `LATEST`\n\n* **app_id**  `text`\n \\- A 20 byte Base64 URL-safe encoded string used for the authentication of the client application.    You must include an `app_",
@@ -249,11 +249,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "25f76814f6d891d42acd0293c000dbbd",
+            "collectionId": "b2e54eb8b3396db15a8acf8a21b410f6",
             "rawModeData": ""
         },
         {
-            "id": "4b232665c81abb596ff1dc169d9840a0",
+            "id": "8609edd0e3f05095a4eb6373df3f1871",
             "name": "Map Data Availability and Freshness",
             "url": "httpspde.cit.api.here.com\/1\/doc\/maps.json",
             "description": "*Request the release date and area covered by each available map region*\n\nTo make a request for release date information, use the `maps.json` endpoint.\n\n\n\n* **app_id**  `text`\n \\- A 20 byte Base64 URL-safe encoded string used for the authentication of the client application.    You must include an `app_id` with every request.\n\n* **app_code**  `text`\n \\- A 20 byte Base64 URL-safe encoded string used for the authentication of the client application.    You must include an `app_code` with every req",
@@ -287,11 +287,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "25f76814f6d891d42acd0293c000dbbd",
+            "collectionId": "b2e54eb8b3396db15a8acf8a21b410f6",
             "rawModeData": ""
         },
         {
-            "id": "f1f3efe585db6f76ee4d82ee0660f07f",
+            "id": "165bd73e3d16c899f5f02e329d021d9f",
             "name": "Available Attributes within a Map Data Layer",
             "url": "httpspde.cit.api.here.com\/1\/doc\/layer.json",
             "description": "*Request which attributes are available within a specified map data layer*\n\nTo make a request for map data layer information, use the `layer``.json` endpoint, supplying the `release`, `layer` and `region` parameters.\n\n\n\n* **region**  `text`\n \\- Map Coverage Region.    e.g. `APAC`, `NA`, `EU`\n\n* **release**  `text`\n \\- Map release quarter    e.g. `2014Q4` or `LATEST`\n\n* **layer**  `text`\n \\- Thematic layer\n\n* **app_id**  `text`\n \\- A 20 byte Base64 URL-safe encoded string used for the authenticat",
@@ -346,7 +346,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "25f76814f6d891d42acd0293c000dbbd",
+            "collectionId": "b2e54eb8b3396db15a8acf8a21b410f6",
             "rawModeData": ""
         }
     ]
