@@ -1,5 +1,5 @@
 {
-    "id": "c95d067db16ed5d9dfda8bfc508ea871",
+    "id": "f0729ec1d4ee407617817c0454b4ee53",
     "name": "Geocoder API",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "0eeb478e7494bbf5ae711a6a2655b0d9",
+            "id": "3a708beb15b6997f97a03c643708abac",
             "name": "Geocode using partial address information",
             "url": "httpsgeocoder.cit.api.here.com\/6.2\/geocode.json",
             "description": "*Request the latitude, longitude and details of an address based on partial address information*\n\nThis example shows a structured (qualified) geocoding request using the `geocode` endpoint. In this structured request the data is provided in `country`, `city`, `street` and `housenumber` parameters in the request URL. Note that the street name misses the directional (\"W\") and also the street type. The omitted directional makes the query ambiguous and the response contains therefore two results: On",
@@ -79,11 +79,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c95d067db16ed5d9dfda8bfc508ea871",
+            "collectionId": "f0729ec1d4ee407617817c0454b4ee53",
             "rawModeData": ""
         },
         {
-            "id": "9adc860cc7a91321666010b106476901",
+            "id": "4cf04d56f0ff59461ed5969dcf3aa099",
             "name": "Reverse Geocode Landmarks",
             "url": "httpsgeocoder.cit.api.here.com\/6.2\/reversegeocode.json",
             "description": "*Request details of landmarks near to a given latitude and longitude*\n\nLandmark reverse geocoding requests can be made using the `reversegeocode` endpoint, specifying the parameter `mode=retrieveLandmarks`, and adding the `prox` parameter to the request URL.  Consult the  Geocoder API Reference for a full list of available landmark types.\n\n\n\n* **prox**  `prox`\n \\- A type of spatial filter. Proximity specifies a circle to search using a latitude, a longitude, and a radius in meters.    e.g. `52.5",
@@ -138,11 +138,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c95d067db16ed5d9dfda8bfc508ea871",
+            "collectionId": "f0729ec1d4ee407617817c0454b4ee53",
             "rawModeData": ""
         },
         {
-            "id": "6cd08e59da44fbf27241070a357e6773",
+            "id": "fbd399b4b8f15a8b78db2743559d8440",
             "name": "Multi-reverse Geocode Addresses",
             "url": "httpsgeocoder.cit.api.here.com\/6.2\/multi-reversegeocode.json",
             "description": "*Request the addresses of up to one hundred locations with one multi-reverse geocoding request*\n\nThe body of the HTTP POST request contains the coordinates and optional radius in the `prox` parameter and an optional numeric identifier in the `id` parameter as plain text, one line per pair of coordinates. The identifier associates each result with the corresponding input. If no id is provided the system creates one starting with 0.\n  \n\n\n\n* **mode**  `enum`\n \\- Search for prominent landmarks nearb",
@@ -204,7 +204,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c95d067db16ed5d9dfda8bfc508ea871",
+            "collectionId": "f0729ec1d4ee407617817c0454b4ee53",
             "rawModeData": ""
         }
     ]
