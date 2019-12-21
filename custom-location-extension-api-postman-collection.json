@@ -1,5 +1,5 @@
 {
-    "id": "e424ec7f04f801b6cd01f6d1b59405b7",
+    "id": "bb0495f83858123997f711cae80da511",
     "name": "Custom Location Extension API",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "01fb9af6b791387fa0d06b2bcca456f1",
+            "id": "66952a858ffb866404bac687db21bcdd",
             "name": "Find Locations within a Bounding Box",
             "url": "httpscustomlocation.cit.api.here.com\/v1\/search\/bbox",
             "description": "*Request a list of user-defined locations within a defined area*\n\nThe request uses the `bbox` endpoint, and the bounding box is specified by adding the `bbox` parameter to the request URL.\n\n\n\n* **layerId**  `text`\n \\- Unique indicator used to retrieve a dataset\n\n* **bbox**  `bbox`\n \\- Restricts results to be found within this bounding box\n\n* **app_id**  `text`\n \\- A 20 byte Base64 URL-safe encoded string used for the authentication of the client application.    You must include an `app_id` with ",
@@ -58,11 +58,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e424ec7f04f801b6cd01f6d1b59405b7",
+            "collectionId": "bb0495f83858123997f711cae80da511",
             "rawModeData": ""
         },
         {
-            "id": "7d31114b8c8d885bd5b394ab307f370a",
+            "id": "61febc92e94a82fc184a1d4ee891ea4c",
             "name": "Filtering by Custom Attributes",
             "url": "httpscustomlocation.cit.api.here.com\/v1\/search\/attribute",
             "description": "*Request a list of user-defined locations based on their attribute values*\n\nAn attribute-based search is requested using the `attribute` endpoint and by adding the `query` parameter to the request URL.\n\n\n\n* **layerId**  `text`\n \\- Unique indicator used to retrieve a dataset\n\n* **query**  `text`\n \\- The query to retrieve\n\n* **app_id**  `text`\n \\- A 20 byte Base64 URL-safe encoded string used for the authentication of the client application.    You must include an `app_id` with every request.\n\n* *",
@@ -110,11 +110,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e424ec7f04f801b6cd01f6d1b59405b7",
+            "collectionId": "bb0495f83858123997f711cae80da511",
             "rawModeData": ""
         },
         {
-            "id": "f0156923849f0d54821b64417534c0be",
+            "id": "8fcce240a4a480ca10b93613d39e8cfd",
             "name": "Find the Five Nearest Locations",
             "url": "httpscustomlocation.cit.api.here.com\/v1\/search\/proximity",
             "description": "*Request a list of user-defined locations within a circle around a fixed point*\n\nThe search uses the `proximity` endpoint. The definition of the location and limit of the search is specified using  `coord` and `radius` parameters, and the number of results returned limited by adding the `limit` parameter to the request URL.\n\n\n\n* **layerId**  `text`\n \\- Unique indicator used to retrieve a dataset\n\n* **coord**  `latlng`\n \\- Center of the proximity search\n\n* **radius**  `number`\n \\- width of the se",
@@ -176,11 +176,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e424ec7f04f801b6cd01f6d1b59405b7",
+            "collectionId": "bb0495f83858123997f711cae80da511",
             "rawModeData": ""
         },
         {
-            "id": "4a6e63cf089c07b747722c67ce15d3ad",
+            "id": "a4bbc2ba1e80df39aff0ba314e5838e1",
             "name": "Find Locations along a pre-defined Route",
             "url": "httpscustomlocation.cit.api.here.com\/v1\/search\/route\/corridor",
             "description": "*Request a list of user-defined locations along a pre-defined route*\n\nThe route has been pre-calculated and the `routeid` has already been acquired from a previous routing request. A route-based corridor search is requested using the `corridor` endpoint and by adding the `routeid` parameter to the request URL, along with a corridor `width`.\n\n\n\n* **layerId**  `text`\n \\- Unique indicator used to retrieve a dataset\n\n* **routeId**  `text`\n \\- A <b>previously<\/b> calculated routeId\n\n* **radius**  `nu",
@@ -242,11 +242,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e424ec7f04f801b6cd01f6d1b59405b7",
+            "collectionId": "bb0495f83858123997f711cae80da511",
             "rawModeData": ""
         },
         {
-            "id": "5bbb81ff92974e25937bb4aebf2973d8",
+            "id": "d863a21d0c4de6a8d85200aca2650062",
             "name": "Find Locations using Corridor",
             "url": "httpscustomlocation.cit.api.here.com\/v1\/search\/corridor",
             "description": "*Request a list of user-defined locations near to a given corridor*\n\nThe route corridor consists of a series of latitude, longitude pairs defining the waypoints of a route, along with a defined width. A corridor search is requested using the `corridor` endpoint and by adding a series of comma delimited latitude, longitude waypoints to the `route` parameter of the request URL, along with a `radius` for the search.\n\n\n\n* **layerId**  `text`\n \\- Unique indicator used to retrieve a dataset\n\n* **route",
@@ -301,7 +301,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e424ec7f04f801b6cd01f6d1b59405b7",
+            "collectionId": "bb0495f83858123997f711cae80da511",
             "rawModeData": ""
         }
     ]
