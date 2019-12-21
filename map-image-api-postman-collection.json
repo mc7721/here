@@ -1,5 +1,5 @@
 {
-    "id": "7b8a28f366f7ce23bd82cba2234be49b",
+    "id": "6a68526c0051c1d4640d836efb69ab37",
     "name": "Map Image API",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "e65e880fdbb3b5255a6d7ba128deb242",
+            "id": "3803ae148cf861cc44609165ef4864a0",
             "name": "Map Image using Bounding Box",
             "url": "httpsimage.maps.cit.api.here.com\/mia\/1.6\/mapview",
             "description": "*Request an image of a map based around a given area*\n\nTo specify a bounding box, add the `bbox` parameter to the request URL. On desktop browsers, redirection to `here.com` will occur automatically unless the `nord` parameter is also added to URL.\n\n\n\n* **bbox**  `text`\n \\- Bounding box of the map specifying the top-right and bottom left corners.    e.g. `52.515,13.377,52.134,13.978`\n\n* **app_id**  `text`\n \\- A 20 byte Base64 URL-safe encoded string used for the authentication of the client appl",
@@ -51,11 +51,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7b8a28f366f7ce23bd82cba2234be49b",
+            "collectionId": "6a68526c0051c1d4640d836efb69ab37",
             "rawModeData": ""
         },
         {
-            "id": "8d844af1329a13df6789c7c603517377",
+            "id": "62a2161d6a29403e6dcb7d26aec72b09",
             "name": "Map Image with Polylines",
             "url": "httpsimage.maps.cit.api.here.com\/mia\/1.6\/route",
             "description": "*Request an image of a map including a polyline*\n\nIt supports also different map schemes, image sizes; image formats as \r\nwell as zooming out from automatically calculated zoom level.\n  \n\n\n\n* **r0**  `text`\n \\- List of coordinates describing the first route\n\n* **r1**  `text`\n \\- List of coordinates describing the second route\n\n* **m0**  `text`\n \\- First route marker on the map\n\n* **m1**  `text`\n \\- Second route marker on the map\n\n* **lc0**  `text`\n \\- Color of the first route line displayed on t",
@@ -166,7 +166,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7b8a28f366f7ce23bd82cba2234be49b",
+            "collectionId": "6a68526c0051c1d4640d836efb69ab37",
             "rawModeData": ""
         }
     ]
