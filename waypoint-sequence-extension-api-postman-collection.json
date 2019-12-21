@@ -1,5 +1,5 @@
 {
-    "id": "75e5e029521cc990b50abf4c9b428c03",
+    "id": "ac4470fa6c3d63b43742fe445b02a50d",
     "name": "Waypoint Sequence Extension API",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "569a64882d68ad766d879ece8b106ffa",
+            "id": "219124ff6795fa61f20e57140920d98a",
             "name": "Waypoint Sequence for Hazardous Materials",
             "url": "httpswse.cit.api.here.com\/2\/findsequence.json",
             "description": "*Request an ordered list of destinations for a truck carrying hazardous materials*\n\nWaypoint sequence calcuations are made using the `findsequence` endpoint and appending  `start` and `end` parameters and consecutively numbered `destination` parameters are used to add intermediate points  to the request. Hazardous material types are added as a comma-delimited list to the  `shippedHazardousGoods` parameter. The list of values is defined in the Enterprise Routing API\n\n\n\n* **start**  `latlng`\n \\- S",
@@ -107,7 +107,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "75e5e029521cc990b50abf4c9b428c03",
+            "collectionId": "ac4470fa6c3d63b43742fe445b02a50d",
             "rawModeData": ""
         }
     ]
