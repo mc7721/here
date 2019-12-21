@@ -9,8 +9,8 @@
         "maps",
         "relative data"
     ],
-    "created": "2019-12-19",
-    "modified": "2019-12-19",
+    "created": "2019-12-21",
+    "modified": "2019-12-21",
     "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/here\/master\/apis.json",
     "specificationVersion": "0.14",
     "apis": [
@@ -24,11 +24,15 @@
             "properties": [
                 {
                     "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/here\/master\/traffic-api-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
                     "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/traffic-api.json"
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/traffic-api-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/here\/master\/traffic-api-postman-collection.json"
                 }
             ]
         },
@@ -42,11 +46,15 @@
             "properties": [
                 {
                     "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/here\/master\/public-transport-api-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
                     "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/public-transport-api.json"
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/public-transport-api-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/here\/master\/public-transport-api-postman-collection.json"
                 }
             ]
         },
@@ -60,11 +68,15 @@
             "properties": [
                 {
                     "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/here\/master\/geocoder-api-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
                     "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/geocoder-api.json"
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/geocoder-api-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/here\/master\/geocoder-api-postman-collection.json"
                 }
             ]
         },
@@ -78,11 +90,15 @@
             "properties": [
                 {
                     "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/here\/master\/routing-api-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
                     "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/routing-api.json"
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/routing-api-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/here\/master\/routing-api-postman-collection.json"
                 }
             ]
         },
@@ -96,11 +112,15 @@
             "properties": [
                 {
                     "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/here\/master\/map-image-api-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
                     "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/map-image-api.json"
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/map-image-api-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/here\/master\/map-image-api-postman-collection.json"
                 }
             ]
         },
@@ -114,11 +134,15 @@
             "properties": [
                 {
                     "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/here\/master\/places-api-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
                     "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/places-api.json"
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/places-api-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/here\/master\/places-api-postman-collection.json"
                 }
             ]
         },
@@ -132,11 +156,15 @@
             "properties": [
                 {
                     "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/here\/master\/custom-location-extension-api-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
                     "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/custom-location-extension-api.json"
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/custom-location-extension-api-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/here\/master\/custom-location-extension-api-postman-collection.json"
                 }
             ]
         },
@@ -150,11 +178,15 @@
             "properties": [
                 {
                     "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/here\/master\/venue-maps-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
                     "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/venue-maps.json"
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/venue-maps-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/here\/master\/venue-maps-postman-collection.json"
                 }
             ]
         },
@@ -168,11 +200,15 @@
             "properties": [
                 {
                     "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/here\/master\/here-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
                     "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/here.json"
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/here-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/here\/master\/here-postman-collection.json"
                 }
             ]
         },
@@ -186,11 +222,15 @@
             "properties": [
                 {
                     "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/here\/master\/waypoint-sequence-extension-api-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
                     "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/waypoint-sequence-extension-api.json"
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/waypoint-sequence-extension-api-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/here\/master\/waypoint-sequence-extension-api-postman-collection.json"
                 }
             ]
         },
@@ -204,11 +244,15 @@
             "properties": [
                 {
                     "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/here\/master\/batch-geocoder-api-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
                     "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/batch-geocoder-api.json"
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/batch-geocoder-api-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/here\/master\/batch-geocoder-api-postman-collection.json"
                 }
             ]
         },
@@ -222,11 +266,15 @@
             "properties": [
                 {
                     "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/here\/master\/map-tile-api-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
                     "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/map-tile-api.json"
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/map-tile-api-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/here\/master\/map-tile-api-postman-collection.json"
                 }
             ]
         },
@@ -240,17 +288,25 @@
             "properties": [
                 {
                     "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/here\/master\/platform-data-extension-api-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
                     "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/platform-data-extension-api.json"
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/platform-data-extension-api-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/here\/master\/platform-data-extension-api-postman-collection.json"
                 }
             ]
         }
     ],
     "include": [],
     "x-common": [
+        {
+            "type": "APIs.json",
+            "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/apis.json"
+        },
         {
             "type": "Blog RSS",
             "url": "https:\/\/developer.here.com\/blog\/feed"
