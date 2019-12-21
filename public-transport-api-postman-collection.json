@@ -1,5 +1,5 @@
 {
-    "id": "8dc967cae8b180efcd83d4e1a34228c2",
+    "id": "51ca2cc091f2c3be68cc1ac575b7f9c4",
     "name": "Public Transport API",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "4d56253f654bc7dbe1ecc9ee6e610c39",
+            "id": "e85334e3c95a9169eff37a89af4ec6da",
             "name": "Find Stations by Name",
             "url": "httpscit.transit.api.here.com\/\/search\/by_name.json",
             "description": "*Request a list of public transit stations based on name*\n\nA station search request can be made using the `search\/by_name.json` endpoint and adding the `name` parameter. The focal point of the search is defined using the `x` and `y` parameters. The number of results can be further restricted by `max `and the `radius `parameters.\n  \n\n\n\n* **x**  `number`\n \\- The longitude of the center point of your search.    e.g. `13.377`\n\n* **y**  `number`\n \\- The latitude of the center point of your search.   ",
@@ -86,11 +86,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8dc967cae8b180efcd83d4e1a34228c2",
+            "collectionId": "51ca2cc091f2c3be68cc1ac575b7f9c4",
             "rawModeData": ""
         },
         {
-            "id": "b7d45010baf1df8f53826dd35c07d679",
+            "id": "309f3caacbd677fdb15edb59b8c6e4a5",
             "name": "Avoid Transit Routes Involving Transfers",
             "url": "httpscit.transit.api.here.com\/\/metarouter\/rest\/routeservice\/v2\/route.json",
             "description": "*Request a direct public transit route excluding changes and transfers*\n\nPublic transit routes can be requested using the `metarouter\/rest\/routeservice\/v2\/route.json` endpoint. The `changes `parameter is used to indicate the number of changes or transfers desired. \n\n\n\n* **startX**  `number`\n \\- The longitude of the start point of your journey.    e.g. `13.377`\n\n* **startY**  `number`\n \\- The latitude of the start point of your journey.    e.g. `52.515`\n\n* **destX**  `number`\n \\- The longitude of",
@@ -173,11 +173,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8dc967cae8b180efcd83d4e1a34228c2",
+            "collectionId": "51ca2cc091f2c3be68cc1ac575b7f9c4",
             "rawModeData": ""
         },
         {
-            "id": "25549833c32874bd6bbf5bcc6e7ff84c",
+            "id": "0362a2bacb16621e49971ae784ec1cb0",
             "name": "Reachability of an Area Within a Specific Time",
             "url": "httpscit.transit.api.here.com\/\/isochrone\/v1\/search.json",
             "description": "*Request a list of the public transit stations that can be reached in a given time*\n\nTo find the stations reachable in a specified time use the `isochrone\/v1\/search.json` endpoint specifying a center point using the `x` and `y` parameters and a maximum total duration in minutes using the `max_dur `parameter.\n  \n\n\n\n* **max_dur**  `number`\n \\- Maximum duration of the journeys, in minutes.   Minimum = 5, Maximum = 90.    The default duration is 15 minutes.    \n\n* **y**  `number`\n \\- The latitude of",
@@ -239,11 +239,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8dc967cae8b180efcd83d4e1a34228c2",
+            "collectionId": "51ca2cc091f2c3be68cc1ac575b7f9c4",
             "rawModeData": ""
         },
         {
-            "id": "e90fcb6f6605ff73b6c170a8696fe48e",
+            "id": "c4da88a84ef29c677efea2d50baf4e6d",
             "name": "All Next Departures (deprecated)",
             "url": "httpscit.transit.api.here.com\/\/metarouter\/rest\/boardservice\/v1\/multiboard.json",
             "description": "*Request a list of all next departure times and destinations from a location.*\n\nAll next departures information can be requested using the `metarouter\/rest\/boardservice\/v1\/multiboard.json` and specifying a `time` and `coordinates. `The maximum numbers of nearby stations and number of departures per station can be restricted by using the `max_stn` and `max` parameters, respectively.\n  \n  <b>NOTE:<\/b> This API has been deprecated and replaced with 2 new endpoints. Please see \n  <b><i>All Next Depa",
@@ -326,11 +326,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8dc967cae8b180efcd83d4e1a34228c2",
+            "collectionId": "51ca2cc091f2c3be68cc1ac575b7f9c4",
             "rawModeData": ""
         },
         {
-            "id": "7f97d2278ec1cca74f55029adbbc3028",
+            "id": "d46f8dadafb8f32dcc2d3ea25b5616f4",
             "name": "Transit Coverage Nearby",
             "url": "httpscit.transit.api.here.com\/\/coverage\/v1\/nearby.json",
             "description": "*Request a list of transit operators and station coverage nearby*\n\nOperator coverage is requested using the `coverage\/v1\/nearby.json` endpoint specifying the location using the `x` and `y` parameters.\n\n\n\n* **details**  `enum`\n \\- Don't show line info in Explored Coverage\n\n    Valid values are : `0` - disabled, `1` - enabled\n\n* **y**  `number`\n \\- The latitude of the center point of your search.    e.g. `52.515`\n\n* **x**  `number`\n \\- The longitude of the center point of your search.    e.g. `13.",
@@ -392,11 +392,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8dc967cae8b180efcd83d4e1a34228c2",
+            "collectionId": "51ca2cc091f2c3be68cc1ac575b7f9c4",
             "rawModeData": ""
         },
         {
-            "id": "629dd61f2d41b9497d2a018acebc279f",
+            "id": "4cd06ca82ce6a22e3af945fe35981ef7",
             "name": "Transit Coverage Within a City",
             "url": "httpscit.transit.api.here.com\/\/coverage\/v1\/search.json",
             "description": "*Request a list of transit operator coverage within a specified city*\n\nA list of operators working within a city is requested using the `coverage\/v1\/search.json` endpoint. The city is specified using the  `q` parameter.\n\n\n\n* **q**  `text`\n \\- The name or a part of the name of the city to search.\n\n* **app_id**  `text`\n \\- A 20 bytes Base64 URL-safe encoded string used for the authentication of the client application.    You must include an app_code and app_code with every request.\n\n* **app_code**",
@@ -465,11 +465,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8dc967cae8b180efcd83d4e1a34228c2",
+            "collectionId": "51ca2cc091f2c3be68cc1ac575b7f9c4",
             "rawModeData": ""
         },
         {
-            "id": "17a8c0e735bb8cd3824ce862cf6ea0af",
+            "id": "0874aa2893020df2a9603ef970f785b4",
             "name": "Find Stations by ID",
             "url": "httpscit.transit.api.here.com\/\/search\/by_stopids.json",
             "description": "*Request details of a specific transit station based on a previous request*\n\nStation details are requested using the `search\/by_stopids.json` endpoint and appending a comma delimited list of `stop-ids` to the request URL. Usually, the request to this endpoint will be called after making a station search request, to obtain a list of stations Ids.\n  \n\n\n\n* **stopIds**  `text`\n \\- Specifies a list of stopIds separated by comma. Each stopId must contain at least 6 characters and must not exceed a max",
@@ -517,11 +517,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8dc967cae8b180efcd83d4e1a34228c2",
+            "collectionId": "51ca2cc091f2c3be68cc1ac575b7f9c4",
             "rawModeData": ""
         },
         {
-            "id": "048f69483d9e7ab321cc52198a87d6f8",
+            "id": "c54a2d954eb12873d518e7ad7d261dff",
             "name": "Find Stations Nearby",
             "url": "httpscit.transit.api.here.com\/\/search\/by_geocoord.json",
             "description": "*Request a list of public transit stations within a given geo-location.*\n\nTo find the nearest stations use the `search\/by_geocoord.json` endpoint specifying a center point using the `x` and `y` parameters and a search radius in meters using the `radius` parameter. `Max` value can also be used to restrict the number of results shown in the response.\n\n\n\n* **y**  `number`\n \\- The latitude of the center point of your search.    e.g. `52.515`\n\n* **x**  `number`\n \\- The longitude of the center point o",
@@ -583,11 +583,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8dc967cae8b180efcd83d4e1a34228c2",
+            "collectionId": "51ca2cc091f2c3be68cc1ac575b7f9c4",
             "rawModeData": ""
         },
         {
-            "id": "a86392095840a21596f9f7ee65620e20",
+            "id": "1c428e307eef3bc905d449bcde574ff1",
             "name": "Find Transit Coverage in Cities Nearby",
             "url": "httpscit.transit.api.here.com\/\/coverage\/v1\/city.json",
             "description": "*Request a list of transit operators available in cities nearby*\n\nCity coverage can be found using the `coverage\/v1\/city.json` endpoint. The `x` and `y` parameters specify the location of the search.\n  The response also includes the number of transit lines and transit stops available for each city.\n  \n\n\n\n* **x**  `number`\n \\- The longitude of the center point of your search.    e.g. `13.377`\n\n* **y**  `number`\n \\- The latitude of the center point of your search.    e.g. `52.515`\n\n* **chinaconfig",
@@ -649,11 +649,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8dc967cae8b180efcd83d4e1a34228c2",
+            "collectionId": "51ca2cc091f2c3be68cc1ac575b7f9c4",
             "rawModeData": ""
         },
         {
-            "id": "b55dd9618dd3c7ef23867c04b7062821",
+            "id": "7ee604b90ca5030bf8d2d0b3b5e27ab0",
             "name": "Next Nearby Departures from a Station",
             "url": "httpscit.transit.api.here.com\/\/metarouter\/rest\/boardservice\/v2\/stationboard.json",
             "description": "*Request a list of next departure times and destinations of a particular station*\n\nNext nearby departures can be requested using the `metarouter\/rest\/boardservice\/v2\/stationboard.json` and specifying a `time` and `stnId`.\n  \n  The station ID (stnId) can be obtained from making a prior call to one of the station search (by name or by geo-coordinates) endpoints.\n\n\n\n* **lang**  `text`\n \\- Language of the response\n\n* **stnId**  `number`\n \\- Station Id.  The format of a station Id is 123456789#100. O",
@@ -715,11 +715,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8dc967cae8b180efcd83d4e1a34228c2",
+            "collectionId": "51ca2cc091f2c3be68cc1ac575b7f9c4",
             "rawModeData": ""
         },
         {
-            "id": "c4684bb262ff5f462241087d3e37664d",
+            "id": "4c7d76da17c05c9bcb3837f05f00d386",
             "name": "All Next Departures for a list of Stations",
             "url": "httpscit.transit.api.here.com\/\/metarouter\/rest\/boardservice\/v1\/multiboard\/by_stopids.json",
             "description": "*Request a list of all next departure times and destinations for a give list of stations.*\n\nAll next departures for a list of stations can be requested using the `metarouter\/rest\/boardservice\/v1\/multiboard\/by_stopIds.json` and specifying a `time` and `stopIds.`  \nThe maximum numbers of nearby stations and number of departures per station can be restricted by using the `max_stn` and `max` parameters, respectively.\n  \n\n\n\n* **lang**  `text`\n \\- Language of the response\n\n* **time**  `text`\n \\- Time ",
@@ -788,11 +788,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8dc967cae8b180efcd83d4e1a34228c2",
+            "collectionId": "51ca2cc091f2c3be68cc1ac575b7f9c4",
             "rawModeData": ""
         },
         {
-            "id": "a1a8fd1e80e82f45d4dbac9f7a25765e",
+            "id": "367b6dbc3bb6c7c06da47d01ad2ec133",
             "name": "All Next Departures from a Location",
             "url": "httpscit.transit.api.here.com\/\/metarouter\/rest\/boardservice\/v1\/multiboard\/by_geocoord.json",
             "description": "*Request a list of all next departure times and destinations from a given location.*\n\nAll next departures from a given location can be requested using the `metarouter\/rest\/boardservice\/v1\/multiboard\/by_geocoord.json` and specifying a `time` and `coordinates. `The maximum numbers of nearby stations and number of departures per station can be restricted by using the `max_stn` and `max` parameters, respectively.\n  \n\n\n\n* **lang**  `text`\n \\- Language of the response\n\n* **startX**  `number`\n \\- The l",
@@ -875,7 +875,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8dc967cae8b180efcd83d4e1a34228c2",
+            "collectionId": "51ca2cc091f2c3be68cc1ac575b7f9c4",
             "rawModeData": ""
         }
     ]
