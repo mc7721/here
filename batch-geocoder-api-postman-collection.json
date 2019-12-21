@@ -1,5 +1,5 @@
 {
-    "id": "7883b7b8295b0b7c72ec0ae7ca4e76fa",
+    "id": "db9e95b9bc0d966e94ab2f627f57c767",
     "name": "Batch Geocoder API",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "2e936a8201e115e6fdc46aee289df31f",
+            "id": "5348efbcb7368c50e90030bc9a05f521",
             "name": "Get Job",
             "url": "httpsbatch.geocoder.cit.api.here.com\/6.2\/jobs\/puwWrv32YOU24y8MNoUr793chFAI36aC",
             "description": "*Request the status of a batch geocoder job*\n\nTo check the status, make a request to the `jobs` endpoint  appending the `requestId` and using the parameter `action=status `\n  \n\n\n\n* **action**  `enum`\n \\- Type of request  \n\n Valid values are : `cancel`, `runs`, `status`\n\n* **app_code**  `text`\n \\- A 20 byte Base64 URL-safe encoded string used for the authentication of the client application.    You must include an `app_code` with every request.  \n\n* **app_id**  `text`\n \\- A 20 byte Base64 URL-saf",
@@ -51,11 +51,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7883b7b8295b0b7c72ec0ae7ca4e76fa",
+            "collectionId": "db9e95b9bc0d966e94ab2f627f57c767",
             "rawModeData": ""
         },
         {
-            "id": "76796960188b02a7c7ce12c4aafea555",
+            "id": "3d16adeef953366dedb54ede292bdcd3",
             "name": "Add Jobs",
             "url": "httpsbatch.geocoder.cit.api.here.com\/6.2\/jobs",
             "description": "* Start asynchronously geocoding a large set of addresses in one batch*\n\nSubmit an HTTP POST request with `action=run` and attach the input data to the body. \n  \n\n\n\n* **gen**  `number`\n \\- Enables\/disables backward incompatible behavior in the API\n\n* **app_id**  `text`\n \\- A 20 byte Base64 URL-safe encoded string used for the authentication of the client application.    You must include an `app_id` with every request.\n\n* **app_code**  `text`\n \\- A 20 byte Base64 URL-safe encoded string used for ",
@@ -145,7 +145,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7883b7b8295b0b7c72ec0ae7ca4e76fa",
+            "collectionId": "db9e95b9bc0d966e94ab2f627f57c767",
             "rawModeData": ""
         }
     ]
