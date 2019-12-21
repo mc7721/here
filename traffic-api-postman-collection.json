@@ -1,5 +1,5 @@
 {
-    "id": "1892a0b8b98c46b6205c1f4048b6ee55",
+    "id": "22ec8cfbeada034cb66929e549ce0ab6",
     "name": "Traffic API",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "db55a7daeea1ee67eefbc2e6e5e85cf2",
+            "id": "792f327dd1df8adda5d65a7b158db451",
             "name": "Flow using Proximity returning Additional Attributes",
             "url": "httpstiles.traffic.cit.api.here.com\/traffic\/6.0\/tiles\/8\/133\/86\/256\/6.1\/flow.json",
             "description": "*Request traffic flow information using proximity, returning shape and functional class*\n\nThe request is made through combining the `prox` parameter and the `responseattributes` in the request URL. The server also supports an XML response.\n\n\n\n* **prox**  `prox`\n \\- A type of spatial filter. Proximity specifies a circle to search using a latitude, a longitude, and a radius in meters.    e.g. `52.515,13.377,100`\n\n* **responseattributes**  `multi-enum`\n \\- A list indicating optional information to ",
@@ -58,11 +58,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1892a0b8b98c46b6205c1f4048b6ee55",
+            "collectionId": "22ec8cfbeada034cb66929e549ce0ab6",
             "rawModeData": ""
         },
         {
-            "id": "298b029dce11b0b4e2120198dfdafba0",
+            "id": "38cc3cfcac41d8e71b4d47dce3bffe30",
             "name": "Transparent Traffic Map",
             "url": "httpstiles.traffic.cit.api.here.com\/traffic\/6.0\/tiles\/8\/133\/86\/256\/flowtile\/newest\/normal.day\/15\/16358\/10898\/256\/png8",
             "description": "*Request a transparent tile with traffic flow information*\n\nTo obtain a transparent map tile displaying traffic flow, use the `flowtile` parameter in the path of the request URL.\n\n\n\n* **app_id**  `text`\n \\- A 20 byte Base64 URL-safe encoded string used for the authentication of the client application.    You must include an `app_id` with every request.\n\n* **app_code**  `text`\n \\- A 20 byte Base64 URL-safe encoded string used for the authentication of the client application.    You must include a",
@@ -96,11 +96,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1892a0b8b98c46b6205c1f4048b6ee55",
+            "collectionId": "22ec8cfbeada034cb66929e549ce0ab6",
             "rawModeData": ""
         },
         {
-            "id": "695e78db956b1860156802d974e2b9bf",
+            "id": "0aef5ef82ac8c5bc859252248f2c9c01",
             "name": "Transparent Traffic Map via TDA (to be deprecated)",
             "url": "httpstiles.traffic.cit.api.here.com\/traffic\/6.0\/tiles\/8\/133\/86\/256\/png32",
             "description": "*Request a transparent tile with traffic flow information*\n\nSupports custom coloring, functional class filters, DLR rendering, sub-segment traffic rendering.\n\n\n\n* **app_id**  `text`\n \\- A 20 byte Base64 URL-safe encoded string used for the authentication of the client application.    You must include an `app_id` with every request.\n\n* **app_code**  `text`\n \\- A 20 byte Base64 URL-safe encoded string used for the authentication of the client application.    You must include an `app_code` with eve",
@@ -134,11 +134,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1892a0b8b98c46b6205c1f4048b6ee55",
+            "collectionId": "22ec8cfbeada034cb66929e549ce0ab6",
             "rawModeData": ""
         },
         {
-            "id": "30908c8a54a4699b0b28e8cf12060dc8",
+            "id": "481b4e4110c182281d9b40e12d2464a2",
             "name": "Traffic Flow Availability Data",
             "url": "httpstiles.traffic.cit.api.here.com\/traffic\/6.0\/tiles\/8\/133\/86\/256\/6.0\/flowavailability.json",
             "description": "*Flow availability requests allow you to see what traffic flow coverage exists in the current Traffic API.*\n\nT<i><\/i>he Server also supports an XML response.\n\n\n\n* **app_id**  `text`\n \\- A 20 byte Base64 URL-safe encoded string used for the authentication of the client application.    You must include an `app_id` with every request.\n\n* **app_code**  `text`\n \\- A 20 byte Base64 URL-safe encoded string used for the authentication of the client application.    You must include an `app_code` with eve",
@@ -172,11 +172,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1892a0b8b98c46b6205c1f4048b6ee55",
+            "collectionId": "22ec8cfbeada034cb66929e549ce0ab6",
             "rawModeData": ""
         },
         {
-            "id": "5e866d8e394e412b2215e35471b0dc02",
+            "id": "169bba16b530d956e88e82c659c76f87",
             "name": "Traffic Map",
             "url": "httpstiles.traffic.cit.api.here.com\/traffic\/6.0\/tiles\/8\/133\/86\/256\/traffictile\/newest\/normal.day\/15\/16358\/10898\/256\/png8",
             "description": "*Request a map tile with traffic flow information*\n\nTo obtain a traffic map tile, use the  `traffictile` parameter in the path of the request URL.\n\n\n\n* **app_id**  `text`\n \\- A 20 byte Base64 URL-safe encoded string used for the authentication of the client application.    You must include an `app_id` with every request.\n\n* **app_code**  `text`\n \\- A 20 byte Base64 URL-safe encoded string used for the authentication of the client application.    You must include an `app_code` with every request.",
@@ -210,11 +210,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1892a0b8b98c46b6205c1f4048b6ee55",
+            "collectionId": "22ec8cfbeada034cb66929e549ce0ab6",
             "rawModeData": ""
         },
         {
-            "id": "335067ade9bfeb8a83ba315969a7eeae",
+            "id": "cb6d08a547af6fb61ab8b420dea0178e",
             "name": "Traffic Incidents via Proximity",
             "url": "httpstiles.traffic.cit.api.here.com\/traffic\/6.0\/tiles\/8\/133\/86\/256\/6.0\/incidents.json",
             "description": "*Request traffic incident information within specified area*\n\nTraffic incidents can be retrieved through several different request types, based on the addressing schemes that they use to specify their geography. Traffic requests can be output to either XML or JSON format. API also supports filters to limit the amount of information provided in the response. Filters are based on on status, criticality, TMC table IDs, profiles, or start and end times, etc.\n\n\n\n* **prox**  `prox`\n \\- A type of spati",
@@ -262,7 +262,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1892a0b8b98c46b6205c1f4048b6ee55",
+            "collectionId": "22ec8cfbeada034cb66929e549ce0ab6",
             "rawModeData": ""
         }
     ]
