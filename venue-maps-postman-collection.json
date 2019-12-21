@@ -1,5 +1,5 @@
 {
-    "id": "309ef57276f62837af8adb0e986a2210",
+    "id": "f3655cdefdd415e790dadbc7fd1c7597",
     "name": "Venue Maps",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "3d7254005e80faed74cba04b4049602e",
+            "id": "801b4ad9643497f5cf22a4ce62c86006",
             "name": "Venue Clusters within a Bounding Box",
             "url": "httpssignature.venue.maps.cit.api.here.com\/venues\/signature\/v1",
             "description": "*Request an overview of the number venues across a large area*\n\nA bounding box is specified using the `bbox` parameter in the request URL.\n\n\n\n* **bbox**  `bbox`\n \\- A type of spatial filter. A bounding box specifies the top-right and bottom left corners of an area to search.    e.g. `52.515,13.377;52.134,13.978`\n\n* **app_id**  `text`\n \\- A 20 byte Base64 URL-safe encoded string used for the authentication of the client application.    You must include an `app_id` with every request.\n\n* **app_cod",
@@ -51,11 +51,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "309ef57276f62837af8adb0e986a2210",
+            "collectionId": "f3655cdefdd415e790dadbc7fd1c7597",
             "rawModeData": ""
         },
         {
-            "id": "8f6442056b380b61bd920bc5d1b8760c",
+            "id": "925000dc219574333982dc83951bb020",
             "name": "Full Venue Model",
             "url": "httpssignature.venue.maps.cit.api.here.com\/venues\/signature\/1\/models-full\/DM_12321.js",
             "description": "*Request extended details of places found within a venue*\n\nA full model of a venue can be obtained by passing `models-full` in the path of the request URL and appending the `id` of the venue in question along with associated authentication credentials. \n  \n  Note that the client-side process formatting the JSON response may take some time in older browsers.\n\n\n\n* **app_id**  `text`\n \\- A 20 byte Base64 URL-safe encoded string used for the authentication of the client application.    You must incl",
@@ -110,11 +110,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "309ef57276f62837af8adb0e986a2210",
+            "collectionId": "f3655cdefdd415e790dadbc7fd1c7597",
             "rawModeData": ""
         },
         {
-            "id": "abbf30182c7add0b78ba6461436837db",
+            "id": "95bd2a12df19fc586fa1ac45b2592018",
             "name": "Venue Map Tile",
             "url": "httpssignature.venue.maps.cit.api.here.com\/venues\/signature\/0\/tiles-png\/L1\/12022001101210030210.png",
             "description": "*Request an individual venue map tile*\n\nIn addition to the usual `app_id` and `app_code`, three additional parameters are required for authentication purposes. The `Signature`, `Policy` and `Key-Pair-Id` parameters have been obtained from a prior request to the `Signature` endpoint.\n\n\n\n* **app_id**  `text`\n \\- A 20 byte Base64 URL-safe encoded string used for the authentication of the client application.    You must include an `app_id` with every request.\n\n* **app_code**  `text`\n \\- A 20 byte Ba",
@@ -169,11 +169,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "309ef57276f62837af8adb0e986a2210",
+            "collectionId": "f3655cdefdd415e790dadbc7fd1c7597",
             "rawModeData": ""
         },
         {
-            "id": "02ba8b7d3903aa60061971b660dd91f3",
+            "id": "45359884750c1641466b8ebb1785d5db",
             "name": "Room Definitions",
             "url": "httpssignature.venue.maps.cit.api.here.com\/venues\/signature\/0\/tiles-ia\/L1\/12022001101210030210.js",
             "description": "*Request a list of the name and shape of rooms found within a single venue map tile*\n\nRoom data associated with a map tile is requested by passing `tiles-ia` in the path of the request URL, along with a known `floor` and `quadkey` and associated authentication credentials.\n\n\n\n* **app_id**  `text`\n \\- A 20 byte Base64 URL-safe encoded string used for the authentication of the client application.    You must include an `app_id` with every request.\n\n* **app_code**  `text`\n \\- A 20 byte Base64 URL-s",
@@ -228,11 +228,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "309ef57276f62837af8adb0e986a2210",
+            "collectionId": "f3655cdefdd415e790dadbc7fd1c7597",
             "rawModeData": ""
         },
         {
-            "id": "af64e0ba185ddf4b8a7089851baf90a1",
+            "id": "d6179112bfc19f3fe5833ec56a68128c",
             "name": "Places within a Venue",
             "url": "httpssignature.venue.maps.cit.api.here.com\/venues\/signature\/1\/models-poi\/DM_7205.js",
             "description": "*Request a list of the places within a venue*\n\nDetails of the individual places to be found within a venue can be obtained by passing `models-poi` in the path of the request URL and appending the `id` of the venue in question along with associated authentication credentials.\n\n\n\n* **app_id**  `text`\n \\- A 20 byte Base64 URL-safe encoded string used for the authentication of the client application.    You must include an `app_id` with every request.\n\n* **app_code**  `text`\n \\- A 20 byte Base64 URL",
@@ -287,11 +287,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "309ef57276f62837af8adb0e986a2210",
+            "collectionId": "f3655cdefdd415e790dadbc7fd1c7597",
             "rawModeData": ""
         },
         {
-            "id": "4b763c96f34628e3b7a2f5523e5882ee",
+            "id": "9118eadf6583f8dacc7c51d380d78f53",
             "name": "Base64 Encoded Map Tiles",
             "url": "httpssignature.venue.maps.cit.api.here.com\/venues\/signature\/0\/tiles-ia-b64\/L1\/12022001101210030210.js",
             "description": "*Request a base64 encoded map tile and associated room definitions with a single request*\n\nA base64 encoded map tile together with the room definitions, is requested by passing `tiles-ia-b64` in the path of the request URL, along with a known `floor` and `quadkey` and associated authentication credentials.\n\n\n\n* **app_id**  `text`\n \\- A 20 byte Base64 URL-safe encoded string used for the authentication of the client application.    You must include an `app_id` with every request.\n\n* **app_code** ",
@@ -346,7 +346,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "309ef57276f62837af8adb0e986a2210",
+            "collectionId": "f3655cdefdd415e790dadbc7fd1c7597",
             "rawModeData": ""
         }
     ]
